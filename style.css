@@ -1,11 +1,17 @@
 /* fonts */
-
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* site colour palette */
 :root {
-    --color: 
-}
+    --yellow: #F8DF6F;
+    --green: #8FE13D;
+    --teal:  #176361;
+    --whitespace: #F6F5EC;
 
+/* font variables */
+    --barlow: "Barlow", sans-serif, Helvetica;
+    --hk-grotesk: "Hanken Grotesk", sans-serif, Arial;
+}
 
 /* generic style reset */
 *{
@@ -15,3 +21,57 @@
 }
 
 /* add your own style rules here */
+
+body {
+    background-color: var(--whitespace);
+}
+
+/* header */
+
+header {
+    background-color: var(--yellow);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    object-fit: cover;
+    max-width: 130px;
+    margin-left: 20px;
+}
+
+nav li {
+    font-family: var(--barlow);
+    font-size: 1.2rem;
+    list-style: none;
+    font-weight: bold;
+    display: inline-block;
+    margin: 30px;
+}
+
+/* text */
+
+h1, h2 {
+    font-family: var(--barlow);
+    text-align: center;
+}
+
+p {
+    font-family: var(--hk-grotesk);
+    margin-left: 20px;
+}
+
+
+/* big images (WIP) */
+
+.bg1 {
+    height: 100%;
+    background: url(img/canyon1.jpg);
+    background-size: cover;
+}
+
+/* .bg1 h1 {
+    background-color: var(--yellow);
+    padding: 1px;
+} */
