@@ -33,6 +33,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 2px solid black;
 }
 
 #logo {
@@ -41,7 +42,7 @@ header {
     margin-left: 20px;
 }
 
-nav li {
+nav li, .blurb li {
     font-family: var(--barlow);
     font-size: 1.2rem;
     list-style: none;
@@ -52,7 +53,7 @@ nav li {
 
 /* text */
 
-h1, h2 {
+h1, h2, li {
     font-family: var(--barlow);
     text-align: center;
 }
@@ -65,10 +66,33 @@ p {
 
 /* big images (WIP) */
 
+.big-guns {
+    position: relative;
+    height: 90vh;
+}
+
 .bg1 {
     height: 100%;
-    background: url(img/canyon1.jpg);
+    background: url(img/canyon3.jpg);
     background-size: cover;
+}
+
+.blurb {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 15vh;
+    color: var(--whitespace);
+    text-shadow: 3px 2px var(--green);
+    font-size: 5rem;
+  }
+
+.blurb li {
+    font-family: var(--hk-grotesk);
+    border: 3px solid var(--whitespace);
+    padding: 10px 20px;
+    text-shadow: 1px 1px var(--teal);
+    box-shadow: 1px 1px var(--teal);
 }
 
 /* .bg1 h1 {
