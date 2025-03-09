@@ -14,14 +14,18 @@
 }
 
 /* generic style reset */
+
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-size: 18px;
 }
 
 /* own style rules here */
+
+html {
+    font-size: 18px;
+}
 
 body {
     background-color: var(--whitespace);
@@ -45,24 +49,36 @@ header {
 
 nav li, .blurb li {
     font-family: var(--barlow);
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     list-style: none;
     font-weight: bold;
     display: inline-block;
-    margin: 30px;
+    margin: 25px;
 }
 
 
 /* big images */
 
-.big-guns {
+.big-image {
     position: relative;
-    height: 90vh;
+    height: 86vh;
 }
 
 .bg1 {
     height: 100%;
     background: url(img/canyon3.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.bg2 {
+    height: 100%;
+    background: url(img/bridge2.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.bg3 {
+    height: 100%;
+    background: url(img/canyon1.jpg) no-repeat center;
     background-size: cover;
 }
 
@@ -76,7 +92,14 @@ nav li, .blurb li {
   }
 
 .blurb h1 {
-    font-size: 5rem;
+    font-size: 5.5rem;
+}
+
+
+.blurb p {
+    color: var(--whitespace);
+    text-shadow: 1px 1px var(--teal);
+    font-size: 1.5rem;
 }
 
 .blurb a {
@@ -88,6 +111,11 @@ nav li, .blurb li {
     box-shadow: 1px 1px var(--teal);
     color: var(--whitespace);
     transition: all 150ms linear;
+}
+
+.chosen {
+    color: var(--teal);
+    text-decoration: underline;
 }
 
 
@@ -106,7 +134,7 @@ h1, nav li, .blurb li {
 
 article h1 {
     margin-top: 35px;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     color: var(--teal);
 }
 
