@@ -95,6 +95,9 @@ nav li, .blurb li {
     font-size: 5.5rem;
 }
 
+.darkertext {
+    text-shadow: 3px 2px var(--teal);
+}
 
 .blurb p {
     color: var(--whitespace);
@@ -154,6 +157,7 @@ p, li {
     font-family: var(--hk-grotesk);
     margin-left: 20px;
     line-height: 1.5;
+    margin-right: 15px;
 }
 
 
