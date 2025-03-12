@@ -34,8 +34,8 @@ body {
 /* header */
 
 header {
-    background-color: var(--yellow);
     display: flex;
+    background-color: var(--yellow);
     justify-content: space-between;
     align-items: center;
     border-bottom: 2px solid black;
@@ -48,11 +48,11 @@ header {
 }
 
 nav li, .blurb li {
+    display: inline-block;
     font-family: var(--barlow);
     font-size: 1.2rem;
     list-style: none;
     font-weight: bold;
-    display: inline-block;
     margin: 25px;
 }
 
@@ -84,10 +84,10 @@ nav li, .blurb li {
 
 .blurb {
     position: absolute;
-    width: 100%;
-    text-align: center;
     top: 15vh;
+    width: 100%;
     color: var(--whitespace);
+    text-align: center;
     text-shadow: 3px 2px var(--green);
   }
 
@@ -100,19 +100,19 @@ nav li, .blurb li {
 }
 
 .blurb p {
+    font-size: 1.5rem;
     color: var(--whitespace);
     text-shadow: 1px 1px var(--teal);
-    font-size: 1.5rem;
 }
 
 .blurb a {
-    font-family: var(--hk-grotesk);
+    padding: 10px 20px;
     border: 3px solid var(--whitespace);
     border-radius: 10px;
-    padding: 10px 20px;
-    text-shadow: 1px 1px var(--teal);
     box-shadow: 1px 1px var(--teal);
-    color: var(--whitespace);
+    font-family: var(--hk-grotesk);
+    color: var(--whitespace);    
+    text-shadow: 1px 1px var(--teal);
     transition: all 150ms linear;
 }
 
@@ -124,16 +124,17 @@ nav li, .blurb li {
 
 /* text */
 
-li a {
-    text-decoration: none;
-    color: black;
-    transition: all 150ms ease;
-}
-
 h1, nav li, .blurb li {
     font-family: var(--barlow);
     text-align: center;
 }
+
+li a {
+    color: black;
+    text-decoration: none;
+    transition: all 150ms ease;
+}
+
 
 article h1 {
     margin-top: 35px;
@@ -142,9 +143,9 @@ article h1 {
 }
 
 h2 {
+    margin: auto auto 10px 20px;
     font-family: var(--barlow);
     font-size: 1.3rem;
-    margin: auto auto 10px 20px;
     color: var(--teal);
 }
 
@@ -154,10 +155,9 @@ ul {
 }
 
 p, li {
+    margin: auto 15px auto 20px;
     font-family: var(--hk-grotesk);
-    margin-left: 20px;
     line-height: 1.5;
-    margin-right: 15px;
 }
 
 
@@ -176,6 +176,20 @@ img {
     width: 18vw;
 }
 
+/* footer */
+
+footer {
+    margin-top: 35px;
+    padding-top: 4vh;
+    padding-bottom: 7vh;
+    color: var(--whitespace);
+    background-color: var(--teal);
+}
+
+footer a {
+    color: var(--whitespace); 
+    transition: color ease 150ms;
+}
 
 /* transitions */
 
@@ -185,8 +199,8 @@ a:hover {
 }
 
 .blurb a:hover {
-    color: black;
     background-color: var(--whitespace);
+    color: black;
     text-shadow: none;
     text-decoration: none;
 }
@@ -197,19 +211,4 @@ footer a:hover {
 
 .image-gallery a:hover {
     background-color: hsla(0, 0, 0, 0.5);
-}
-
-/* footer */
-
-footer {
-    color: var(--whitespace);
-    background-color: var(--teal);
-    margin-top: 35px;
-    padding-top: 4vh;
-    padding-bottom: 7vh;
-}
-
-footer a {
-    color: var(--whitespace); 
-    transition: color ease 150ms;
 }
