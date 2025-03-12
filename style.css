@@ -161,7 +161,20 @@ p, li {
 }
 
 
-/* gallery (TBD) */
+/* gallery */
+
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 18vw);
+    grid-template-rows: 22vh;
+    grid-gap: 80px;
+    justify-content: center;
+}
+
+img {
+    height: 100%;
+    width: 18vw;
+}
 
 
 /* transitions */
@@ -182,6 +195,9 @@ footer a:hover {
     color: var(--yellow);
 }
 
+.image-gallery a:hover {
+    background-color: hsla(0, 0, 0, 0.5);
+}
 
 /* footer */
 
