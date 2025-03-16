@@ -91,7 +91,7 @@ nav li, .blurb li {
 
 .blurb {
     position: absolute;
-    top: 15vh;
+    top: 3vh;
     width: 100%;
     color: var(--whitespace);
     text-align: center;
@@ -107,9 +107,9 @@ nav li, .blurb li {
 }
 
 .blurb p {
-    font-size: 1.5rem;
-    color: var(--whitespace);
-    text-shadow: 1px 1px var(--teal);
+    font-size: 2rem;
+    color: var(--yellow);
+    text-shadow: 2px 1px var(--teal);
 }
 
 .blurb a {
@@ -170,7 +170,7 @@ p, li {
 
 /* gallery */
 
-.image-gallery {
+/* .image-gallery {
     display: grid;
     grid-template-columns: repeat(3, 18vw);
     grid-template-rows: 22vh;
@@ -181,7 +181,7 @@ p, li {
 img {
     height: 100%;
     width: 18vw;
-}
+} */
 
 
 /* footer */
@@ -200,7 +200,7 @@ footer a {
 }
 
 
-/* transitions */
+/* transitions or interactive things */
 
 a:hover {
     color: var(--teal);
