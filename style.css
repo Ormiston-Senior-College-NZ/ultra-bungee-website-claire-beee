@@ -106,12 +106,6 @@ nav li, .blurb li {
     text-shadow: 3px 2px var(--teal);
 }
 
-.blurb p {
-    font-size: 2rem;
-    color: var(--yellow);
-    text-shadow: 2px 1px var(--teal);
-}
-
 .blurb a {
     padding: 10px 20px;
     border: 3px solid var(--whitespace);
@@ -121,6 +115,15 @@ nav li, .blurb li {
     color: var(--whitespace);    
     text-shadow: 1px 1px var(--teal);
     transition: all 150ms linear;
+}
+
+#booking {
+    padding: 0px auto;
+    border: 3px solid var(--yellow);
+    box-shadow: 2px 2px var(--teal);
+    font-size: 1.5rem;
+    color: var(--yellow);    
+    text-shadow: 2px 1px var(--teal);
 }
 
 .chosen {
@@ -143,7 +146,7 @@ li a {
 }
 
 
-article h1 {
+main h1 {
     margin-top: 35px;
     font-size: 1.6rem;
     color: var(--teal);
@@ -168,7 +171,7 @@ p, li {
 }
 
 
-/* gallery */
+/* gallery (W3S) */
 
 /* .image-gallery {
     display: grid;
@@ -182,6 +185,8 @@ img {
     height: 100%;
     width: 18vw;
 } */
+
+
 
 
 /* footer */
@@ -204,7 +209,6 @@ footer a {
 
 a:hover {
     color: var(--teal);
-    text-decoration: underline;
 }
 
 .blurb a:hover {
@@ -218,6 +222,12 @@ footer a:hover {
     color: var(--yellow);
 }
 
-.image-gallery a:hover {
-    background-color: hsla(0, 0, 0, 0.5);
+#booking:hover {
+    border: 3px solid var(--whitespace);
+    background-color: var(--whitespace);
+    border: none;
+    color: black;
+    box-shadow: none;
+    text-shadow: none;
+    text-decoration: none;
 }
