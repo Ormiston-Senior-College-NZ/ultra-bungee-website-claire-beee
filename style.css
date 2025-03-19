@@ -145,8 +145,7 @@ li a {
     transition: all 150ms ease;
 }
 
-
-main h1 {
+main h1, .gallery h1 {
     margin-top: 35px;
     font-size: 1.6rem;
     color: var(--teal);
@@ -171,22 +170,21 @@ p, li {
 }
 
 
-/* gallery (W3S) */
+/* gallery */
 
-/* .image-gallery {
+.image-gallery {
     display: grid;
-    grid-template-columns: repeat(3, 18vw);
-    grid-template-rows: 22vh;
-    grid-gap: 80px;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: 25vh;
+    grid-gap: 30px;
     justify-content: center;
 }
 
-img {
+figure img {
     height: 100%;
     width: 18vw;
-} */
-
-
+    transition: all 150ms linear;
+}
 
 
 /* footer */
@@ -230,4 +228,9 @@ footer a:hover {
     box-shadow: none;
     text-shadow: none;
     text-decoration: none;
+}
+
+figure img:hover {
+    border: 2px solid var(--green);
+    box-shadow: 3px 2px var(--teal);
 }
