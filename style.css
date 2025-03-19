@@ -229,8 +229,3 @@ footer a:hover {
     text-shadow: none;
     text-decoration: none;
 }
-
-figure img:hover {
-    border: 2px solid var(--green);
-    box-shadow: 3px 2px var(--teal);
-}
