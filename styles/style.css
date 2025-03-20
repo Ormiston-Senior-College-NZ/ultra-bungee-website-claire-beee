@@ -51,7 +51,7 @@ header {
 .button {
     display: inline-block;
     font-family: var(--barlow);
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     list-style: none;
     font-weight: bold;
     margin: 25px;
@@ -92,7 +92,7 @@ header {
 .blurb {
     position: absolute;
     top: 3vh;
-    width: 100%;
+    max-width: 95%;
     color: var(--whitespace);
     text-align: center;
     text-shadow: 3px 2px var(--green);
@@ -121,7 +121,6 @@ header {
     padding: 0px auto;
     border: 3px solid var(--yellow);
     box-shadow: 2px 2px var(--teal);
-    font-size: 1.5rem;
     color: var(--yellow);    
     text-shadow: 2px 1px var(--teal);
 }
@@ -153,6 +152,7 @@ figure img {
 }
 
 #book {
+    display: inline-block;
     padding: 10px 20px;
     font-family: var(--barlow);
     color: var(--teal);
@@ -253,18 +253,31 @@ footer a:hover {
 
 /* media queries */
 
-@media only screen and (max-width: 800px) and (max-height: 600px) {
+
+
+
+/* small tablet landscape */
+@media only screen and (max-width: 884px) and (max-height: 600px) {
+    /* gallery */
     .image-gallery {
         grid-template-columns: repeat(3, auto);
     }
 
+    /* big images */
+    .big-image {
+        height: 63vh;
+    }
+
     .blurb {
-        top: 1vh;
+        top: 0%;
+    }
+
+    .blurb h1 {
+        font-size: 4rem;
     }
 
     .blurb a {
-        top: 0;
-        margin-top: 10px;
+        margin: auto;
     }
     
 }
