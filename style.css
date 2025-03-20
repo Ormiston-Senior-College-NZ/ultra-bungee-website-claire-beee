@@ -194,6 +194,7 @@ figure img {
 .gallery li {
     display: flex;
     justify-content: center;
+    margin-bottom: 2vh;
 }
 
 #book {
@@ -207,7 +208,7 @@ figure img {
 /* footer */
 
 footer {
-    margin-top: 35px;
+    margin-top: 10vh;
     padding-top: 4vh;
     padding-bottom: 7vh;
     color: var(--whitespace);
@@ -238,11 +239,8 @@ footer a:hover {
 }
 
 #booking:hover {
-    border: 3px solid var(--yellow);
     background-color: var(--yellow);
-    border: none;
     color: black;
-    box-shadow: none;
     text-shadow: none;
     text-decoration: none;
 }

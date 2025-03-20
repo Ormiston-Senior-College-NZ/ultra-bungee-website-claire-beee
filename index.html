@@ -13,7 +13,7 @@
 <body>
 
     <header>
-        <img id="logo" src="img/own_logo.png" aria-label="Ultra Bungee Logo">
+        <img id="logo" src="img/own_logo.png" alt="Ultra Bungee Logo">
         <nav>
             <ul>
                 <li class="button"><a href="index.html" class="chosen">HOME</a></li>
@@ -30,15 +30,15 @@
         <section class="blurb">
             <h1>A Rush of Freefall Like No Other!</h1>   
             <ul>
-                <li class="button"><a href="bridge.html">BRIDGE</a></li>
-                <li class="button"><a href="canyon.html">CANYON</a></li>
-                <li class="button"><a href="tower.html">TOWER</a></li>
+                <li class="button"><a href="#image-gallery">GALLERY</a></li>
+                <li class="button"><a href="#info">DETAILS</a></li>
             </ul>
     </section>
     </section>
 
 <!-- gallery code from Learner Workbook -->
-    <section class="gallery">
+    <section class="gallery" id="image-gallery">
+        <br>
         <h1>Get An Idea Of The Thrill Our Bridge Jump Has To Offer!</h1>
         <p>Click on the images to see them at full size!</p>
         <br>
@@ -60,16 +60,15 @@
         <a data-fancybox="gallery" href="img/bridge3.jpg"><img src="img/bridge3_thumb.jpg" 
             alt="man bungee jumping horizontally facing pale blue waters"></a>
     </section>
-    <br>
-
     <ul>
         <li class="button"><a id="book" href="https://forms.gle/7a2JokoU6JvqNebH9" target="_blank">BOOK NOW</a></li>
     </ul>
     </section>
 
+    <br>
 
     <main>
-    <section class="content">
+    <section class="content" id="info">
         <h1>A Word To Our Adventurers!</h1>
         <p>Before you embark into this amazing experience,
             make sure to peruse these important information:</p>    
@@ -82,6 +81,7 @@
                 and must be accompanied by at least one adult.</li>
             <li>(ie. if a child is booked for a jump, there must be
                 at least one adult booked in the same time slot).</li>
+            <li>Prices may vary for each type of jump experience offered.</li>
         </ul>
         <br>
         <h2>Instructor Jump</h2>
@@ -102,5 +102,19 @@
 <!-- gallery code from Learner Workbook -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+<!-- smooth scrooling code from Slides -->
+    <script>
+        $('a[href*="#"]').on('click', function(e) {
+          e.preventDefault()
+          $('html, body').animate(
+            {
+       scrollTop: $($(this).attr('href')).offset().top,
+      },
+      500,
+        'linear'
+          );
+        });
+      </script>
+      
 </body>
 </html>
