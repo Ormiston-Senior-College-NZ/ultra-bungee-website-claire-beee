@@ -48,7 +48,7 @@ header {
     margin-left: 20px;
 }
 
-nav li, .blurb li {
+.button {
     display: inline-block;
     font-family: var(--barlow);
     font-size: 1.2rem;
@@ -139,6 +139,10 @@ h1, nav li, .blurb li {
     text-align: center;
 }
 
+.content ul, li, p {
+    font-family: var(--hk-grotesk);
+}
+
 li a {
     color: black;
     text-decoration: none;
@@ -158,24 +162,26 @@ h2 {
     color: var(--teal);
 }
 
-ul {
-    font-family: var(--hk-grotesk);
+.content ul {
     list-style: disc inside;
 }
 
-p, li {
+li {
     margin: auto 15px auto 20px;
-    font-family: var(--hk-grotesk);
     line-height: 1.5;
 }
 
+p {
+    text-align: center;
+    line-height: 1.5;
+}
 
 /* gallery */
 
 .image-gallery {
     display: grid;
     grid-template-columns: repeat(4, auto);
-    grid-template-rows: 25vh;
+    grid-template-rows: repeat(2, 25vh);
     grid-gap: 30px;
     justify-content: center;
 }
@@ -183,9 +189,20 @@ p, li {
 figure img {
     height: 100%;
     width: 18vw;
-    transition: all 150ms linear;
 }
 
+.gallery li {
+    display: flex;
+    justify-content: center;
+}
+
+#book {
+    padding: 10px 20px;
+    font-family: var(--barlow);
+    color: var(--teal);
+    border: 3px solid var(--teal);
+    border-radius: 10px;
+}
 
 /* footer */
 
@@ -221,11 +238,19 @@ footer a:hover {
 }
 
 #booking:hover {
-    border: 3px solid var(--whitespace);
-    background-color: var(--whitespace);
+    border: 3px solid var(--yellow);
+    background-color: var(--yellow);
     border: none;
     color: black;
     box-shadow: none;
     text-shadow: none;
     text-decoration: none;
 }
+
+#book:hover {
+    border: 3px solid var(--teal);
+    background-color: var(--teal);
+    color: var(--whitespace);
+}
+
+/* media queries */
