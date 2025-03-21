@@ -92,14 +92,20 @@ header {
 .blurb {
     position: absolute;
     top: 3vh;
-    max-width: 95%;
+    /* positioning from stack overflow */
+    left: 0;
+    right: 0;
+    margin-inline: auto;
+    width: fit-content;
     color: var(--whitespace);
     text-align: center;
     text-shadow: 3px 2px var(--green);
   }
 
 .blurb h1 {
-    font-size: 5.5rem;
+    display: inline-flex;
+    justify-self: center;
+    font-size: 5rem;
 }
 
 .darkertext {
@@ -114,11 +120,10 @@ header {
     font-family: var(--hk-grotesk);
     color: var(--whitespace);    
     text-shadow: 1px 1px var(--teal);
-    transition: all 150ms linear;
+    transition: all 150ms ease;
 }
 
 #booking {
-    padding: 0px auto;
     border: 3px solid var(--yellow);
     box-shadow: 2px 2px var(--teal);
     color: var(--yellow);    
@@ -251,13 +256,204 @@ footer a:hover {
     color: var(--whitespace);
 }
 
+
 /* media queries */
+/* mobile portrait */
+@media only screen and (max-width: 320px) and (max-height: 480px)
+and (min-height: 321px) {
+    html {
+        font-size: 14px; 
+        /* 18px looked really big in this screen size */
+    }
+
+    /* header */
+    header {
+        padding-top: 0.5vh;
+    }
+
+    #logo {
+        max-width: 60px;
+        margin-left: 10px;
+    }
+
+    nav .button {
+        font-size: 0.7rem;
+        margin: 5px;
+    }
+
+    /* big images */
+    .big-image {
+        height: auto;
+    }
+
+    .bg1 {
+        height: 40vh;
+    }
+
+    .bg2, .bg3, .bg4 {
+        height: 50vh;
+    }
+
+    .blurb {
+        top: 6vh;
+    }
+
+    .blurb h1 {
+        margin: auto;
+        font-size: 2.25rem;
+        color: var(--whitespace);
+    }
+
+    .blurb a {
+        padding: 5px;
+    }
+
+    .button {
+        font-size: 1rem;
+        margin: 3vh 1vh;
+    }
+
+    #booking {
+        margin: auto;
+    }
+
+    /* gallery */
+    .image-gallery {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    figure img {
+        width: 0.1vw;
+        height: 0.5vh;
+    }
+
+    /* text */
+    p {
+        width: 95%;
+    }
+}
+
+/* mobile landscape */
+@media only screen and (max-width: 480px) and (min-width: 321px) 
+and (max-height: 320px) {
+    html {
+        font-size: 16px; 
+        /* 18px looked really big in this screen size */
+    }
+
+    /* header */
+    header {
+        padding-top: 0.5vh;
+    }
+
+    #logo {
+        max-width: 95px;
+    }
+
+    nav .button {
+        font-size: 0.8rem;
+        margin: 8px;
+    }
+
+    /* big images */
+    .big-image {
+        height: auto;
+        margin-bottom: 6.5vh;
+    }
+
+    .bg1 {
+        height: 79vh;
+    }
+
+    .bg2, .bg3, .bg4 {
+        height: 90vh;
+    }
+
+    .blurb {
+        top: 8vh;
+    }
+
+    .blurb h1 {
+        margin: auto;
+        font-size: 3em;
+    }
+
+    .button {
+        font-size: 1rem;
+        margin: 7vh 3vh;
+    }
+
+    /* gallery */
+    .image-gallery {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    figure img {
+        width: 0.1vw;
+        height: 0.5vh;
+    }
+}
 
 
+/* small tablet portrait */
+@media only screen and (max-width: 600px) and (min-width: 481px)
+ and (max-height: 800px) and (min-height: 481px) {
+    /* header */
+    header {
+        padding-top: 0.5vh;
+    }
 
+    #logo {
+        max-width: 95px;
+    }
+
+    nav .button {
+        font-size: 1rem;
+        margin: 10px;
+    }
+
+    /* big images */
+    .big-image {
+        height: auto;
+    }
+
+    .bg2, .bg3, .bg4 {
+        height: 50vh;
+    }
+
+    .bg1 {
+        height: 40vh;
+    }
+    
+    .blurb h1 {
+        font-size: 3.6rem;
+        width: 98%;
+        margin: auto;
+    }
+    
+    .blurb a {
+        margin: auto;
+    }
+
+    /* gallery */
+    .image-gallery {
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(4, 20vh);
+        row-gap: 3vh;
+    }
+}
 
 /* small tablet landscape */
-@media only screen and (max-width: 884px) and (max-height: 600px) {
+@media only screen and (max-width: 884px) and (min-width: 600px)
+    and (max-height: 600px) {
     /* gallery */
     .image-gallery {
         grid-template-columns: repeat(3, auto);
@@ -265,19 +461,104 @@ footer a:hover {
 
     /* big images */
     .big-image {
-        height: 63vh;
+        height: 60vh;
     }
 
     .blurb {
-        top: 0%;
+        top: 8vh;
     }
 
     .blurb h1 {
-        font-size: 4rem;
+        margin: auto;
+        font-size: 3.5rem;
     }
 
     .blurb a {
         margin: auto;
     }
+}
+
+
+/* tablet portait */
+@media only screen and (max-width: 770px) and (min-width: 601px) 
+and (max-height: 1024px) and (min-height: 801px) {
+    /* header */
+    nav .button {
+        font-size: 1.2rem;
+    }
+
+    /* gallery */
+    .image-gallery {
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: auto;
+    }
+
+    figure img {
+        margin: auto;
+    }
+
+    .gallery {
+        margin: auto;
+    }
+
+    /* big images */
+    .big-image {
+        height: auto;
+    }
+
+    .bg1 {
+        height: 40vh;
+    }
     
+    .bg2, .bg3, .bg4 {
+        height: 50vh;
+    }
+
+    .blurb {
+        top: 6vh;
+    }
+        
+    .blurb h1 {
+        margin: auto;
+        font-size: 4.5rem;
+        width: 95%;
+    }
+
+    /* text */
+    p {
+        max-width: 95%;
+        margin: auto;
+    }
+}
+
+/* tablet landscape */
+@media only screen and (max-width: 1024px) and (min-width: 885px)
+and (max-height: 768px) {
+        /* header */
+        nav .button {
+            font-size: 1.2rem;
+        }
+
+        /* big images */
+        .big-image {
+            height: 55vh;
+        }
+    
+        .blurb {
+            top: 6vh;
+        }
+    
+        .blurb h1 {
+            margin: auto;
+            font-size: 4.5rem;
+        }
+
+        .blurb .button {
+            margin: 3vh 1vh;
+        }
+    
+        /* button */
+        .button {
+            margin: 10px;
+        }
 }
