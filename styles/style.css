@@ -123,13 +123,6 @@ header {
     transition: all 150ms ease;
 }
 
-#booking {
-    border: 3px solid var(--yellow);
-    box-shadow: 2px 2px var(--teal);
-    color: var(--yellow);    
-    text-shadow: 2px 1px var(--teal);
-}
-
 .chosen {
     color: var(--teal);
     text-decoration: underline;
@@ -243,13 +236,6 @@ footer a:hover {
     color: var(--yellow);
 }
 
-#booking:hover {
-    background-color: var(--yellow);
-    color: black;
-    text-shadow: none;
-    text-decoration: none;
-}
-
 #book:hover {
     border: 3px solid var(--teal);
     background-color: var(--teal);
@@ -311,10 +297,6 @@ and (min-height: 321px) {
     .button {
         font-size: 1rem;
         margin: 3vh 1vh;
-    }
-
-    #booking {
-        margin: auto;
     }
 
     /* gallery */
